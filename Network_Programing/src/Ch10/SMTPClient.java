@@ -17,7 +17,7 @@ import java.net.Socket;
 public class SMTPClient {
     public static void main(String[] args) {
         try {
-            Socket s = new Socket("127.0.0.1",2500);
+            Socket s = new Socket("127.0.0.1",8000);
             BufferedReader reader = new BufferedReader(new InputStreamReader(s.getInputStream()));
             PrintWriter writer = new PrintWriter(s.getOutputStream());
             String msg = reader.readLine();System.out.println(msg);
